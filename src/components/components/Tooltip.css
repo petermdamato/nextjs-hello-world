@@ -1,0 +1,37 @@
+.question-mark-tooltip-container {
+  position: relative;
+}
+
+.question-mark-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #83a2a2;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #83a2a2;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  display: none;
+  min-width: 140px;
+}
+
+.question-mark-tooltip:hover .tooltip {
+  display: block;
+}
